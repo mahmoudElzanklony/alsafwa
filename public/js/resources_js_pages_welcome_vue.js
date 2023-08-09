@@ -209,6 +209,135 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "welcome",
@@ -276,7 +405,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.i(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*==========fonts sizes ===============*/\nbody[data-v-874a346a] {\n  direction: rtl;\n  font-family: \"Cairo\" !important;\n}\nul[data-v-874a346a] {\n  list-style: none;\n  padding: 0px;\n  margin: 0px;\n}\n.alert-danger[data-v-874a346a] {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.modal-dialog[data-v-874a346a] {\n  text-align: right;\n}\n.modal-dialog .modal-header .close[data-v-874a346a] {\n  margin-left: inherit;\n}\n.modal-dialog .alert-danger[data-v-874a346a] {\n  display: none;\n}\ninput[data-v-874a346a], textarea[data-v-874a346a] {\n  direction: rtl;\n}\ntable .control[data-v-874a346a] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\ntable .control span[data-v-874a346a], table .control a[data-v-874a346a] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #4899d8;\n  background: #fafafa;\n  border-radius: 4px;\n  width: 35px;\n  height: 35px;\n  cursor: pointer;\n  text-decoration: none;\n}\ntable .control span[data-v-874a346a]:last-of-type {\n  color: darkred;\n  margin-right: 5px;\n}\n.dataTables_wrapper .dataTables_filter input[data-v-874a346a] {\n  margin-right: 10px !important;\n}\n.dt-button[data-v-874a346a] {\n  background-color: #4899d8;\n  color: white;\n  padding: 5px 15px;\n  border: none;\n  border-radius: 5px;\n}\n#myTable_wrapper[data-v-874a346a] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  flex-direction: row-reverse;\n}\n#myTable_wrapper > div[data-v-874a346a] {\n  margin-left: 10px;\n}\n#myTable_wrapper .dataTables_info[data-v-874a346a] {\n  margin-right: 50px;\n}\n#myTable_wrapper table[data-v-874a346a] {\n  width: 100%;\n  max-width: 100%;\n}\n\n/*---------------------------------------------------start of public classes -------------------------------------*/\n.page-content[data-v-874a346a] {\n  width: calc(100% - 200px);\n  height: 400px;\n  margin-right: auto;\n  padding: 30px;\n}\n.main-title[data-v-874a346a] {\n  position: relative;\n  font-size: 30px;\n  color: #4899d8;\n  text-align: right;\n}\n.txt-shadow[data-v-874a346a], .main-title[data-v-874a346a] {\n  text-shadow: 1px 1px 1px #ddd;\n}\n.main-title[data-v-874a346a]::before, .main-title[data-v-874a346a]::after {\n  content: \"\";\n  position: absolute;\n  bottom: -18px;\n  display: block;\n  width: 85px;\n  height: 3px;\n  background-color: #1464bf;\n}\n.main-title[data-v-874a346a]::after {\n  width: 60px;\n  bottom: -24px;\n}\n.form_icons .form-group[data-v-874a346a] {\n  position: relative;\n}\n.form_icons .form-group > span[data-v-874a346a] {\n  position: absolute;\n  left: 10px;\n  top: 39px;\n  color: #4899d8;\n  font-size: 18px;\n}\n.modal-backdrop[data-v-874a346a] {\n  width: 100% !important;\n  height: 100% !important;\n}\n.searchable ul[data-v-874a346a] {\n  max-height: 230px;\n  overflow: auto;\n  display: none;\n  border: 1px solid #eee;\n  border-top: none;\n}\n.searchable ul li[data-v-874a346a] {\n  padding: 10px;\n  border-bottom: 1px solid #eee;\n  cursor: pointer;\n}\ntable.dataTable thead .sorting input[data-v-874a346a] {\n  width: unset;\n  font-size: 21px;\n}\ntable.dataTable thead td[data-v-874a346a] {\n  width: unset !important;\n}\ntable.dataTable thead td input[data-v-874a346a] {\n  font-weight: bold;\n  color: red;\n}\n#DataTables_Table_0_filter[data-v-874a346a] {\n  font-size: 35px;\n  margin-top: 10px;\n  margin-right: 50px;\n}\n.data_rows_data table.dataTable thead .sorting[data-v-874a346a] {\n  padding-left: 0px;\n  background-color: #b7b7c3;\n}\n\n/*---------------------------------------------------end of public classes -------------------------------------*/\n.info-data-style .header-controls button[data-v-874a346a], .info-data-style a[data-v-874a346a] {\n  padding: 15px 50px;\n  font-size: 30px !important;\n  margin-bottom: 10px;\n}\n.info-data-style .header-controls span[data-v-874a346a] {\n  font-size: 30px;\n}\n.info-data-style .dataTables_length[data-v-874a346a] {\n  font-size: 30px;\n}\n.info-data-style #print_columns input[type=checkbox][data-v-874a346a] {\n  width: 35px;\n  height: 35px;\n  position: relative;\n  top: 3px;\n}\n.outer-nav > span[data-v-874a346a] {\n  position: fixed;\n  right: 10px;\n  top: 10px;\n  font-size: 30px;\n  color: #222;\n  z-index: 99999999999;\n}\nnav[data-v-874a346a] {\n  width: 200px;\n  position: fixed;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  z-index: 9999;\n  background-color: #4899d8;\n  overflow: hidden;\n}\nnav > img[data-v-874a346a] {\n  display: block;\n  margin: 20px auto;\n  max-width: 100px;\n}\nnav h2[data-v-874a346a] {\n  font-size: 30px;\n}\nnav h3[data-v-874a346a] {\n  font-size: 14px;\n}\nnav > ul > li[data-v-874a346a]:hover {\n  background-color: #1464bf;\n  padding-right: 30px;\n}\nnav ul[data-v-874a346a] {\n  overflow: auto;\n  height: calc(100% - 153px);\n}\nnav ul li[data-v-874a346a] {\n  border-bottom: 1px solid #ddd;\n  text-align: right;\n  padding: 10px;\n  transition: 0.5s all;\n}\nnav ul li a[data-v-874a346a] {\n  font-size: 18px;\n  color: white;\n  text-decoration: none;\n}\nnav ul li a span[data-v-874a346a]:first-of-type {\n  position: relative;\n  top: 4px;\n  margin-left: 2px;\n}\nnav .list_data[data-v-874a346a] {\n  padding: 0px;\n}\nnav .list_data p[data-v-874a346a], nav .list_data li[data-v-874a346a] {\n  padding: 10px;\n}\nnav .list_data li[data-v-874a346a]:hover {\n  background-color: #1464bf;\n  padding-right: 30px;\n}\nnav .list_data ul[data-v-874a346a] {\n  display: none;\n}\nnav .list_data p[data-v-874a346a] {\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0px;\n}\nnav .list_data p span[data-v-874a346a] {\n  color: white;\n}\nnav .list_data p span[data-v-874a346a]:first-of-type {\n  color: #222;\n  font-weight: bold;\n  font-size: 20px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*==========fonts sizes ===============*/\nbody[data-v-874a346a] {\n  direction: rtl;\n  font-family: \"Cairo\" !important;\n}\nul[data-v-874a346a] {\n  list-style: none;\n  padding: 0px;\n  margin: 0px;\n}\n.alert-danger[data-v-874a346a] {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.modal-dialog[data-v-874a346a] {\n  text-align: right;\n}\n.modal-dialog .modal-header .close[data-v-874a346a] {\n  margin-left: inherit;\n}\n.modal-dialog .alert-danger[data-v-874a346a] {\n  display: none;\n}\ninput[data-v-874a346a], textarea[data-v-874a346a] {\n  direction: rtl;\n}\ntable .control[data-v-874a346a] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\ntable .control span[data-v-874a346a], table .control a[data-v-874a346a] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #4899d8;\n  background: #fafafa;\n  border-radius: 4px;\n  width: 35px;\n  height: 35px;\n  cursor: pointer;\n  text-decoration: none;\n}\ntable .control span[data-v-874a346a]:last-of-type {\n  color: darkred;\n  margin-right: 5px;\n}\n.dataTables_wrapper .dataTables_filter input[data-v-874a346a] {\n  margin-right: 10px !important;\n}\n.dt-button[data-v-874a346a] {\n  background-color: #4899d8;\n  color: white;\n  padding: 5px 15px;\n  border: none;\n  border-radius: 5px;\n}\n#myTable_wrapper[data-v-874a346a] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  flex-direction: row-reverse;\n}\n#myTable_wrapper > div[data-v-874a346a] {\n  margin-left: 10px;\n}\n#myTable_wrapper .dataTables_info[data-v-874a346a] {\n  margin-right: 50px;\n}\n#myTable_wrapper table[data-v-874a346a] {\n  width: 100%;\n  max-width: 100%;\n}\n\n/*---------------------------------------------------start of public classes -------------------------------------*/\n.page-content[data-v-874a346a] {\n  width: calc(100% - 200px);\n  height: 400px;\n  margin-right: auto;\n  padding: 30px;\n}\n.main-title[data-v-874a346a] {\n  position: relative;\n  font-size: 30px;\n  color: #4899d8;\n  text-align: right;\n}\n.txt-shadow[data-v-874a346a], .main-title[data-v-874a346a] {\n  text-shadow: 1px 1px 1px #ddd;\n}\n.main-title[data-v-874a346a]::before, .main-title[data-v-874a346a]::after {\n  content: \"\";\n  position: absolute;\n  bottom: -18px;\n  display: block;\n  width: 85px;\n  height: 3px;\n  background-color: #1464bf;\n}\n.main-title[data-v-874a346a]::after {\n  width: 60px;\n  bottom: -24px;\n}\n.form_icons .form-group[data-v-874a346a] {\n  position: relative;\n}\n.form_icons .form-group > span[data-v-874a346a] {\n  position: absolute;\n  left: 10px;\n  top: 39px;\n  color: #4899d8;\n  font-size: 18px;\n}\n.modal-backdrop[data-v-874a346a] {\n  width: 100% !important;\n  height: 100% !important;\n}\n.searchable ul[data-v-874a346a] {\n  max-height: 230px;\n  overflow: auto;\n  display: none;\n  border: 1px solid #eee;\n  border-top: none;\n}\n.searchable ul li[data-v-874a346a] {\n  padding: 10px;\n  border-bottom: 1px solid #eee;\n  cursor: pointer;\n}\ntable.dataTable thead .sorting input[data-v-874a346a] {\n  width: unset;\n  font-size: 21px;\n}\ntable.dataTable thead td[data-v-874a346a] {\n  width: unset !important;\n  padding-right: 0px;\n  padding-left: 0px;\n}\ntable.dataTable thead td input[data-v-874a346a] {\n  font-weight: bold;\n  color: red;\n}\n#DataTables_Table_0_filter[data-v-874a346a] {\n  font-size: 35px;\n  margin-top: 10px;\n  margin-right: 50px;\n}\n.data_rows_data table.dataTable thead .sorting[data-v-874a346a] {\n  padding-left: 0px;\n  background-color: #b7b7c3;\n}\n\n/*---------------------------------------------------end of public classes -------------------------------------*/\n.info-data-style .header-controls button[data-v-874a346a], .info-data-style a[data-v-874a346a] {\n  padding: 15px 50px;\n  font-size: 30px !important;\n  margin-bottom: 10px;\n}\n.info-data-style .header-controls span[data-v-874a346a] {\n  font-size: 30px;\n}\n.info-data-style .dataTables_length[data-v-874a346a] {\n  font-size: 30px;\n}\n.info-data-style #print_columns input[type=checkbox][data-v-874a346a] {\n  width: 35px;\n  height: 35px;\n  position: relative;\n  top: 3px;\n}\n.social[data-v-874a346a] {\n  position: fixed;\n  left: 0px;\n  top: 40%;\n  z-index: 100000000000000020;\n}\n.social ul li[data-v-874a346a] {\n  width: 40px;\n  height: 40px;\n}\n.social ul li a[data-v-874a346a] {\n  width: 40px;\n  height: 40px;\n  text-decoration: none;\n  color: white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.social ul li[data-v-874a346a]:first-of-type {\n  background-color: #0165E1;\n  border-top-right-radius: 10px;\n}\n.social ul li[data-v-874a346a]:nth-of-type(2) {\n  background: #f09433;\n  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);\n}\n.social ul li[data-v-874a346a]:last-of-type {\n  background-color: #1DA1F2;\n  border-bottom-right-radius: 10px;\n}\n.location p[data-v-874a346a] {\n  font-size: 18px;\n}\n.location p span[data-v-874a346a]:first-of-type {\n  color: #4899d8;\n}\n.location p span[data-v-874a346a]:last-of-type {\n  font-weight: bold;\n  position: relative;\n  top: -1px;\n  margin-right: 7px;\n}\n.outer-nav > span[data-v-874a346a] {\n  position: fixed;\n  right: 10px;\n  top: 10px;\n  font-size: 30px;\n  color: #222;\n  z-index: 99999999999;\n}\nnav[data-v-874a346a] {\n  width: 200px;\n  position: fixed;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  z-index: 9999;\n  background-color: #4899d8;\n  overflow: hidden;\n}\nnav > img[data-v-874a346a] {\n  display: block;\n  margin: 20px auto;\n  max-width: 100px;\n}\nnav h2[data-v-874a346a] {\n  font-size: 30px;\n}\nnav h3[data-v-874a346a] {\n  font-size: 14px;\n}\nnav > ul > li[data-v-874a346a]:hover {\n  background-color: #1464bf;\n  padding-right: 30px;\n}\nnav ul[data-v-874a346a] {\n  overflow: auto;\n  height: calc(100% - 153px);\n}\nnav ul li[data-v-874a346a] {\n  border-bottom: 1px solid #ddd;\n  text-align: right;\n  padding: 10px;\n  transition: 0.5s all;\n}\nnav ul li a[data-v-874a346a] {\n  font-size: 18px;\n  color: white;\n  text-decoration: none;\n}\nnav ul li a span[data-v-874a346a]:first-of-type {\n  position: relative;\n  top: 4px;\n  margin-left: 2px;\n}\nnav .list_data[data-v-874a346a] {\n  padding: 0px;\n}\nnav .list_data p[data-v-874a346a], nav .list_data li[data-v-874a346a] {\n  padding: 10px;\n}\nnav .list_data li[data-v-874a346a]:hover {\n  background-color: #1464bf;\n  padding-right: 30px;\n}\nnav .list_data ul[data-v-874a346a] {\n  display: none;\n}\nnav .list_data p[data-v-874a346a] {\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0px;\n}\nnav .list_data p span[data-v-874a346a] {\n  color: white;\n}\nnav .list_data p span[data-v-874a346a]:first-of-type {\n  color: #222;\n  font-weight: bold;\n  font-size: 20px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -299,7 +428,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*==========fonts sizes ===============*/\na[data-v-cdd8e9ee] {\n  text-decoration: none;\n}\n.blue[data-v-cdd8e9ee] {\n  background-color: #e3f2fd;\n}\n.red[data-v-cdd8e9ee] {\n  background-color: #ffebee;\n}\n.green[data-v-cdd8e9ee] {\n  background-color: #e8f5e9;\n}\n.gray[data-v-cdd8e9ee] {\n  background-color: #fafafa;\n}\n.purple[data-v-cdd8e9ee] {\n  background-color: #f3e5f5;\n}\n.yellow[data-v-cdd8e9ee] {\n  background-color: #fffde7;\n}\n.box-statics[data-v-cdd8e9ee] {\n  height: 150px;\n  border: 1px solid #ddd;\n  border-radius: 15px;\n  display: flex;\n  align-items: center;\n  align-content: center;\n  justify-content: center;\n  flex-wrap: wrap;\n  margin-bottom: 10px;\n}\n.box-statics p[data-v-cdd8e9ee] {\n  width: 100%;\n  margin: 0px;\n  color: #222;\n  font-size: 18px;\n}\n.box-statics p[data-v-cdd8e9ee]:last-of-type {\n  font-size: 30px;\n  font-weight: bold;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*==========fonts sizes ===============*/\na[data-v-cdd8e9ee] {\n  text-decoration: none;\n}\n.blue[data-v-cdd8e9ee] {\n  background-color: #e3f2fd;\n}\n.red[data-v-cdd8e9ee] {\n  background-color: #ffebee;\n}\n.green[data-v-cdd8e9ee] {\n  background-color: #e8f5e9;\n}\n.gray[data-v-cdd8e9ee] {\n  background-color: #fafafa;\n}\n.purple[data-v-cdd8e9ee] {\n  background-color: #f3e5f5;\n}\n.yellow[data-v-cdd8e9ee] {\n  background-color: #fffde7;\n}\n.box-statics[data-v-cdd8e9ee] {\n  height: 150px;\n  border: 1px solid #ddd;\n  border-radius: 15px;\n  display: flex;\n  align-items: center;\n  align-content: center;\n  justify-content: center;\n  background-color: #7086fa30 !important;\n  flex-wrap: wrap;\n  margin-bottom: 10px;\n}\n.box-statics p[data-v-cdd8e9ee] {\n  width: 100%;\n  margin: 0px;\n  color: #222;\n  font-size: 18px;\n}\n.box-statics p[data-v-cdd8e9ee]:last-of-type {\n  font-size: 30px;\n  font-weight: bold;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1101,157 +1230,83 @@ var render = function () {
       _vm._m(0),
       _vm._v(" "),
       _c("div", { staticClass: "page-content" }, [
-        _c("h2", { staticClass: "main-title" }, [
-          _vm._v("مرحبا بك في صفحه احصائيات الاداره"),
-        ]),
+        _vm._m(1),
         _vm._v(" "),
         _c("div", { staticClass: "container mt-5" }, [
-          _c("div", { staticClass: "row mb-4" }, [
-            _vm.$page.props.user_personal_data.type == "admin"
-              ? _c(
-                  "div",
-                  { staticClass: "col-lg-4 col-md-6 mb-2" },
-                  [
-                    _c("inertia-link", { attrs: { href: "/users" } }, [
-                      _c(
-                        "div",
-                        { staticClass: "box-statics text-center red" },
-                        [
-                          _c("p", [_vm._v("عدد المستخدمين")]),
-                          _vm._v(" "),
-                          _c("p", [_vm._v(_vm._s(_vm.employees))]),
-                        ]
-                      ),
-                    ]),
-                  ],
-                  1
-                )
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.$page.props.user_personal_data.type == "admin"
-              ? _c(
-                  "div",
-                  { staticClass: "col-lg-4 col-md-6 mb-2" },
-                  [
-                    _c(
-                      "inertia-link",
-                      { attrs: { href: "/companies-branches" } },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "box-statics text-center blue" },
-                          [
-                            _c("p", [_vm._v("عدد الأفرع")]),
-                            _vm._v(" "),
-                            _c("p", [_vm._v(_vm._s(_vm.companies))]),
-                          ]
-                        ),
-                      ]
-                    ),
-                  ],
-                  1
-                )
-              : _vm._e(),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 col-md-6 mb-2" },
-              [
-                _c("inertia-link", { attrs: { href: "/info-data?status=0" } }, [
-                  _c("div", { staticClass: "box-statics text-center green" }, [
-                    _vm.$page.props.user_personal_data.type == "admin"
-                      ? _c("p", [_vm._v("عدد البيانات")])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _vm.$page.props.user_personal_data.type != "admin"
-                      ? _c("p", [_vm._v("البيانات")])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _vm.$page.props.user_personal_data.type == "admin"
-                      ? _c("p", [_vm._v(_vm._s(_vm.info_data))])
-                      : _vm._e(),
-                  ]),
-                ]),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _vm.$page.props.user_personal_data.type == "admin"
-              ? _c(
-                  "div",
-                  { staticClass: "col-lg-4 col-md-6 mb-2" },
-                  [
-                    _c("inertia-link", { attrs: { href: "/reports" } }, [
-                      _c(
-                        "div",
-                        { staticClass: "box-statics text-center gray" },
-                        [
-                          _c("p", [_vm._v("التقارير")]),
-                          _vm._v(" "),
-                          _c("p", [_vm._v(_vm._s(_vm.reports))]),
-                        ]
-                      ),
-                    ]),
-                  ],
-                  1
-                )
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.$page.props.user_personal_data.type == "admin"
-              ? _c(
-                  "div",
-                  { staticClass: "col-lg-4 col-md-6 mb-2" },
-                  [
-                    _c("inertia-link", { attrs: { href: "/deletes" } }, [
-                      _c(
-                        "div",
-                        { staticClass: "box-statics text-center red" },
-                        [_c("p", [_vm._v("المحذوفات")]), _vm._v(" "), _c("p")]
-                      ),
-                    ]),
-                  ],
-                  1
-                )
-              : _vm._e(),
-          ]),
-          _vm._v(" "),
-          _vm.$page.props.user_personal_data.type == "admin"
-            ? _c(
-                "table",
-                {
-                  staticClass:
-                    "table table-hover text-center w-100 table-striped table-bordered",
-                },
+          _c("div", { staticClass: "row mb-4 align-items-center" }, [
+            _c("div", { staticClass: "col-lg-3 col-md-6 mb-2" }, [
+              _c(
+                "a",
+                { staticClass: "mb-4", attrs: { href: "/info-data?status=0" } },
                 [
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("عدد المستخدمين")]),
+                  _c("div", { staticClass: "box-statics text-center green" }, [
+                    _vm._m(2),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(_vm.employees))]),
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("عدد الأفرع")]),
+                    _c("p", [_vm._v("عدد البيانات")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(_vm.companies))]),
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("عدد البيانات")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(_vm.info_data))]),
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("عدد التقارير")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(_vm.reports))]),
+                    _c("p", [_vm._v(_vm._s(_vm.info_data))]),
                   ]),
                 ]
-              )
-            : _vm._e(),
+              ),
+              _vm._v(" "),
+              _c("a", { staticClass: "mb-4", attrs: { href: "/users" } }, [
+                _c("div", { staticClass: "box-statics text-center red" }, [
+                  _vm._m(3),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(" المستخدمين")]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.employees))]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("a", { attrs: { href: "/companies-branches" } }, [
+                _c("div", { staticClass: "box-statics text-center blue" }, [
+                  _vm._m(4),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("الأفرع")]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.companies))]),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-6 col-md-6 mb-2" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "mb-4 reports d-block m-auto",
+                  attrs: { href: "/reports" },
+                },
+                [
+                  _c("div", { staticClass: "box-statics text-center gray" }, [
+                    _vm._m(5),
+                    _vm._v(" "),
+                    _c("p", [_vm._v("التقارير")]),
+                    _vm._v(" "),
+                    _c("p", [_vm._v(_vm._s(_vm.reports))]),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "w-100 mb-4",
+                attrs: { src: "/images/whatbar.jpg" },
+              }),
+              _vm._v(" "),
+              _vm._m(6),
+            ]),
+            _vm._v(" "),
+            _vm._m(7),
+          ]),
         ]),
+        _vm._v(" "),
+        _vm._m(8),
+        _vm._v(" "),
+         false
+          ? 0
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._m(10),
       ]),
     ],
     1
@@ -1283,10 +1338,184 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "text-center company_logo",
+        attrs: { "data-v-cdd8e9ee": "" },
+      },
+      [
+        _c("img", {
+          staticClass: "d-block m-auto",
+          attrs: { src: "/images/logo_2.png" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("i", { staticClass: "ri-file-info-line" })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("i", { staticClass: "ri-group-line" })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("i", { staticClass: "ri-stack-line" })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("i", { staticClass: "ri-file-list-3-line" })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "d-block m-auto", attrs: { href: "/deletes" } },
+      [
+        _c("div", { staticClass: "box-statics text-center red" }, [
+          _c("span", [_c("i", { staticClass: "ri-delete-bin-5-line" })]),
+          _vm._v(" "),
+          _c("p", [_vm._v("المحذوفات")]),
+          _vm._v(" "),
+          _c("p"),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-6" }, [
+      _c("a", { staticClass: "mb-4", attrs: { href: "/info-data?status=1" } }, [
+        _c("div", { staticClass: "box-statics text-center red" }, [
+          _c("span", [_c("i", { staticClass: "ri-briefcase-line" })]),
+          _vm._v(" "),
+          _c("p", [_vm._v("عدد المشاريع الناجحه")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("2840")]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "box-statics text-center red mb-4" }, [
+        _c("span", [_c("i", { staticClass: "ri-macbook-line" })]),
+        _vm._v(" "),
+        _c("p", [_vm._v("اجتماعات عبر الانترنت")]),
+        _vm._v(" "),
+        _c("p"),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "box-statics text-center red mb-4" }, [
+        _c("span", [_c("i", { staticClass: "ri-customer-service-2-line" })]),
+        _vm._v(" "),
+        _c("p", [_vm._v("دعم فني")]),
+        _vm._v(" "),
+        _c("p", [_vm._v("22/7")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "location" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row align-items-center" }, [
+          _c("div", { staticClass: "col-md-6 col-12 text-right" }, [
+            _c("p", [
+              _c("span", [_c("i", { staticClass: "ri-map-pin-line" })]),
+              _vm._v(" "),
+              _c("span", [
+                _vm._v(
+                  "دمياط ميناء دمياط مبنى خدمه العملاء الدور الثانى مكتب 211B"
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("span", [_c("i", { staticClass: "ri-map-pin-line" })]),
+              _vm._v(" "),
+              _c("span", [
+                _vm._v("دمياط دمياط الجديدة المركزية شارع  العيون الدولى"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "d-flex" }, [
+              _c("span", [_c("i", { staticClass: "ri-smartphone-line" })]),
+              _vm._v(" "),
+              _c("span", [_vm._v("01004468633")]),
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "d-flex" }, [
+              _c("span", [_c("i", { staticClass: "ri-phone-line" })]),
+              _vm._v(" "),
+              _c("span", [_vm._v("0572433399")]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6 col-12 mb-2" }, [
+            _c("iframe", {
+              staticStyle: { border: "0" },
+              attrs: {
+                src: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3404.197959748356!2d31.676302984851358!3d31.436216681397465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI2JzEwLjQiTiAzMcKwNDAnMjYuOCJF!5e0!3m2!1sar!2seg!4v1691590130026!5m2!1sar!2seg",
+                width: "100%",
+                height: "450",
+                allowfullscreen: "",
+                loading: "lazy",
+                referrerpolicy: "no-referrer-when-downgrade",
+              },
+            }),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("tr", [
       _c("td", [_vm._v("النوع")]),
       _vm._v(" "),
       _c("td", [_vm._v("العدد")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "social" }, [
+      _c("ul", [
+        _c("li", [
+          _c("a", { attrs: { href: "#", target: "_blank" } }, [
+            _c("span", [_c("i", { staticClass: "ri-facebook-line" })]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "#", target: "_blank" } }, [
+            _c("span", [_c("i", { staticClass: "ri-instagram-line" })]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "#", target: "_blank" } }, [
+            _c("span", [_c("i", { staticClass: "ri-twitter-line" })]),
+          ]),
+        ]),
+      ]),
     ])
   },
 ]

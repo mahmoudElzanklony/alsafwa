@@ -76,7 +76,7 @@
                          ]"
 
                         -->
-                    <thead style="background-color: black">
+                    <thead>
                         <tr>
                         <td>التسلسلي</td>
                         <td v-show="false">اسم المستخدم</td>
@@ -115,60 +115,52 @@
                     <tbody>
                     <tr v-for="(item,index) in output" :key="index"
                         :id="'row_'+index"
-                        :style="[ (item['company_id'] == null || item['item'] == null || item['country_id'] == null || item['exporter_id'] == null || item['bill_number'] == null || item['bill_value'] == null || item['number_data'] == null || item['weight'] == null || item['ACID'] == null || item['permission'] == null || item['destination_id'] == null ) ?
 
-                          {backgroundColor: '#FFE566'}: // yellow first step
-                         (item['number_container'] == null || item['line'] == null || item['policy'] == null || item['vehicle'] == null || item['arrived'] == null || item['allowed'] == null || item['instructions_status'] == null || item['lifting_status'] == null)?
-                          {backgroundColor: '#00184582'}: // blue second step
-                          item['status'] == 1 ?
-                           {backgroundColor: '#222'} : // black
-                           item['matching_status'] != null ? '':
-                           {backgroundColor: '#61A5C2'} // three step
-                         ]"
                     >
 
                         <td :id="'id_'+item['id']" style="font-weight: bold">{{ item.id }}</td>
-                        <td v-show="false" :id="'user_'+item['id']" style="color:green; font-weight:bold;">{{ item.user.name }}</td>
-                        <td :id="'company_'+item['id']" style="color:blue; font-weight:bold;">
+                        <td v-show="false" :id="'user_'+item['id']" style="color: rgb(1, 42, 74); font-weight:bold;">{{ item.user.name }}</td>
+                        <td :id="'company_'+item['id']" style="color: rgb(1, 42, 74); font-weight: bold;">
                             {{ item.company_id != null ? item.company.name:'' }}
                         </td>
-                        <td :id="'item_'+item['id']" style="color:coral; font-weight: bold">{{ item.item }}</td>
-                        <td :id="'country_'+item['id']" style="color:cornflowerblue; font-weight: bold">
+                        <td :id="'item_'+item['id']" style="color: rgb(1, 42, 74); font-weight: bold">{{ item.item }}</td>
+                        <td :id="'country_'+item['id']" style="color: rgb(1, 42, 74); font-weight: bold;">
                             {{ item.country_id != null ? item.country.name:'' }}
                         </td>
-                        <td :id="'exporter_'+item['id']" style="color:darkmagenta;font-weight:bold;">
+                        <td :id="'exporter_'+item['id']" style="color: rgb(1, 42, 74); font-weight: bold;">
                             {{ item.exporter_id != null ? item.exporter.name : null }}
                         </td>
-                        <td :id="'bill_number_'+item['id']" style="color:darkred; font-weight:bold;">
+                        <td :id="'bill_number_'+item['id']" style="color: rgb(1, 42, 74); font-weight: bold;">
                             {{ item.bill_number }}
                         </td>
-                        <td :id="'bill_value_'+item['id']" style="color:darkgreen;font-weight:bold;">{{ item.bill_value }}</td>
+                        <td :id="'bill_value_'+item['id']"
+                            style="color: rgb(1, 42, 74); font-weight: bold;">{{ item.bill_value }}</td>
 
-                        <td :id="'number_data_'+item['id']" style="color:goldenrod; font-weight: bold">{{ item.number_data }}</td>
-                        <td :id="'weight_'+item['id']" style="color:cornflowerblue; font-weight: bold">{{ item.weight }}</td>
-                        <td :id="'ACID_'+item['id']" style="font-weight: bold">{{ item.ACID }}</td>
-                        <td :id="'permission_'+item['id']" style="color:hotpink;font-weight:bold;">{{ item.permission }}</td>
-                        <td :id="'destination_'+item['id']" style="color:purple; font-weight: bold">
+                        <td :id="'number_data_'+item['id']" style="color: rgb(1, 42, 74); font-weight: bold">{{ item.number_data }}</td>
+                        <td :id="'weight_'+item['id']" style="color: rgb(1, 42, 74); font-weight: bold">{{ item.weight }}</td>
+                        <td :id="'ACID_'+item['id']" style="color:rgb(44, 125, 160); font-weight: bold">{{ item.ACID }}</td>
+                        <td :id="'permission_'+item['id']" style="color:rgb(44, 125, 160);font-weight:bold;">{{ item.permission }}</td>
+                        <td :id="'destination_'+item['id']" style="color:rgb(44, 125, 160); font-weight: bold">
                             {{ item.destination_id != null ? item.destination.name : '' }}
                         </td>
-                        <td :id="'number_container_'+item['id']" style="color:cornflowerblue; font-weight: bold">{{ item.number_container }}</td>
+                        <td :id="'number_container_'+item['id']" style="color:rgb(135, 129, 129); font-weight: bold">{{ item.number_container }}</td>
 
-                        <td :id="'line_'+item['id']" style="color:coral; font-weight: bold">{{ item.line }}</td>
-                        <td :id="'policy_'+item['id']" style="color:green; font-weight:bold;">{{ item.policy }}</td>
-                        <td :id="'vehicle_'+item['id']" style="color:darkred; font-weight:bold;">{{ item.vehicle }}</td>
-                        <td :id="'arrived_'+item['id']" style="color:cornflowerblue; font-weight: bold">{{ item.arrived }}</td>
+                        <td :id="'line_'+item['id']" style="color:rgb(135, 129, 129); font-weight: bold">{{ item.line }}</td>
+                        <td :id="'policy_'+item['id']" style="color:rgb(135, 129, 129); font-weight:bold;">{{ item.policy }}</td>
+                        <td :id="'vehicle_'+item['id']" style="color:rgb(135, 129, 129); font-weight:bold;">{{ item.vehicle }}</td>
+                        <td :id="'arrived_'+item['id']" style="color:rgb(135, 129, 129); font-weight: bold">{{ item.arrived }}</td>
 
-                        <td :id="'allowed_'+item['id']" style="color:darkgreen;font-weight:bold;">{{ item.allowed }}</td>
-                        <td :id="'instructions_status_'+item['id']" style="font-weight: bold">{{ item.instructions_status }}</td>
-                        <td :id="'lifting_status_'+item['id']" style="color:darkblue; font-weight: bold">{{ item.lifting_status }}</td>
-                        <td :id="'forty_six_number_'+item['id']" style="color:#086868; font-weight: bold">{{ item.forty_six_number }}</td>
-                        <td :id="'request_number_'+item['id']" style="color:darkred; font-weight:bold;">{{ item.request_number }}</td>
-                        <td :id="'statement_status_'+item['id']">{{ item.statement_status }}</td>
+                        <td :id="'allowed_'+item['id']" style="color:rgb(135, 129, 129);font-weight:bold;">{{ item.allowed }}</td>
+                        <td :id="'instructions_status_'+item['id']" style="color:rgb(135, 129, 129); font-weight: bold">{{ item.instructions_status }}</td>
+                        <td :id="'lifting_status_'+item['id']" style="color:rgb(135, 129, 129); font-weight: bold">{{ item.lifting_status }}</td>
+                        <td :id="'forty_six_number_'+item['id']" style="color:rgb(3, 169, 244); font-weight: bold">{{ item.forty_six_number }}</td>
+                        <td :id="'request_number_'+item['id']" style="color:rgb(3, 169, 244); font-weight:bold;">{{ item.request_number }}</td>
+                        <td :id="'statement_status_'+item['id']" style="color:rgb(3, 169, 244); font-weight: bold">{{ item.statement_status }}</td>
 
-                        <td :id="'notes_'+item['id']" style="color:purple; font-weight: bold">{{ item.notes }}</td>
-                        <td :id="'exchange_date_'+item['id']" style="color:coral; font-weight: bold">{{ item.exchange_date }}</td>
-                        <td v-show="status == 1" :id="'matching_status_'+item['id']" style="color:darkgreen;font-weight:bold;">{{ item.matching_status }}</td>
-                        <td v-show="false" :id="'status_'+item['id']" style="color:cornflowerblue; font-weight: bold">
+                        <td :id="'notes_'+item['id']" style="color:rgb(3, 169, 244); font-weight: bold">{{ item.notes }}</td>
+                        <td :id="'exchange_date_'+item['id']" style="color:rgb(3, 169, 244); font-weight: bold">{{ item.exchange_date }}</td>
+                        <td v-show="status == 1" :id="'matching_status_'+item['id']" style="color:rgb(3, 169, 244);font-weight:bold;">{{ item.matching_status }}</td>
+                        <td v-show="false" :id="'status_'+item['id']" style="color:rgb(3, 169, 244); font-weight: bold">
                             {{ item.status == 1 ?'منتهي':'غير منتهي' }}</td>
                         <td v-show="false" :id="'updated_at_'+item['id']" style="color:coral; font-size: 10px; font-weight: bold">
                             {{ new Date(item.updated_at).toLocaleString() }}</td>
@@ -699,7 +691,8 @@ export default {
 
     },
     mounted() {
-
+        $('nav').css('width','0%');
+        $('.page-content').css('width','100%')
 
         this.screen_zoom = Number(document.body.style.zoom.replace('%',''));
 
@@ -735,10 +728,12 @@ export default {
                  table = $('.myTable').DataTable({
                     columnDefs: [ { targets: "_all" , orderable: false} ],
                     order: [[ 28, 'desc' ]],
+                    iDisplayLength: 100,
                 });
             }else if(document.URL.split('sort=')[1] == 'arrived'){
                  table = $('.myTable').DataTable({
-                    order: [[ 15, 'asc' ]],
+                     iDisplayLength: 100,
+                     order: [[ 15, 'asc' ]],
                      columnDefs: [{
                          targets: "_all",
                          orderable: false
@@ -746,6 +741,7 @@ export default {
                 });
             }else if(document.URL.split('sort=')[1] == 'one' || document.URL.split('sort=')[1] == 'two' || document.URL.split('sort=')[1] == 'three'){
                 table = $('.myTable').DataTable({
+                    iDisplayLength: 100,
                     order: [[ 2, 'asc' ]],
                     columnDefs: [{
                         targets: "_all",
@@ -754,6 +750,7 @@ export default {
                 });
             }else{
                 table = $('.myTable').DataTable({
+                    iDisplayLength: 100,
                     order: [[ 0, 'desc' ]],
                     columnDefs: [{
                         targets: "_all",
@@ -763,6 +760,7 @@ export default {
             }
         }else{
             table = $('.myTable').DataTable({
+                iDisplayLength: 100,
                 order: [[ 0, 'desc' ]],
                 columnDefs: [{
                     targets: "_all",
@@ -837,7 +835,9 @@ export default {
             if(input[i].title == 'ACID' || input[i].title == 'سماح'){
              input[i].setAttribute('size',50);
             }else if(input[i].title == 'رقم الحاوية'){
-              input[i].setAttribute('size',30);
+              input[i].setAttribute('size',90);
+            }else if(input[i].title == 'اذن الاستيراد'){
+                input[i].setAttribute('size',85);
             }else if(input[i].title == 'بوليصة'){
                 input[i].setAttribute('size',input[i].getAttribute('placeholder').length + 15);
             }else if(input[i].title == 'الكشف'){
@@ -865,7 +865,7 @@ export default {
             var status = 1;
         }
 
-        document.body.style.zoom = "35%";
+        document.body.style.zoom = "40%";
 
     },
     methods:{
@@ -1179,7 +1179,7 @@ h2{
     }
 }
 .color_tr{
-    background-color: darkcyan !important;
+    background-color: #8080803d  !important;
 }
 table.dataTable{
     width:100% !important;

@@ -157,6 +157,8 @@ table.dataTable thead .sorting input {
 
 table.dataTable thead td {
   width: unset !important;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 table.dataTable thead td input {
   font-weight: bold;
@@ -191,4 +193,49 @@ table.dataTable thead td input {
   height: 35px;
   position: relative;
   top: 3px;
+}
+
+.social {
+  position: fixed;
+  left: 0px;
+  top: 40%;
+  z-index: 100000000000000020;
+}
+.social ul li {
+  width: 40px;
+  height: 40px;
+}
+.social ul li a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social ul li:first-of-type {
+  background-color: #0165E1;
+  border-top-right-radius: 10px;
+}
+.social ul li:nth-of-type(2) {
+  background: #f09433;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.social ul li:last-of-type {
+  background-color: #1DA1F2;
+  border-bottom-right-radius: 10px;
+}
+
+.location p {
+  font-size: 18px;
+}
+.location p span:first-of-type {
+  color: #4899d8;
+}
+.location p span:last-of-type {
+  font-weight: bold;
+  position: relative;
+  top: -1px;
+  margin-right: 7px;
 }

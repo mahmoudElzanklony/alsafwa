@@ -883,14 +883,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -916,6 +908,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   },
   computed: {},
   mounted: function mounted() {
+    $('nav').css('width', '0%');
+    $('.page-content').css('width', '100%');
     this.screen_zoom = Number(document.body.style.zoom.replace('%', ''));
     $('.myTable thead tr td').each(function () {
       var title = $(this).text();
@@ -946,10 +940,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
             targets: "_all",
             orderable: false
           }],
-          order: [[28, 'desc']]
+          order: [[28, 'desc']],
+          iDisplayLength: 100
         });
       } else if (document.URL.split('sort=')[1] == 'arrived') {
         table = $('.myTable').DataTable({
+          iDisplayLength: 100,
           order: [[15, 'asc']],
           columnDefs: [{
             targets: "_all",
@@ -958,6 +954,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         });
       } else if (document.URL.split('sort=')[1] == 'one' || document.URL.split('sort=')[1] == 'two' || document.URL.split('sort=')[1] == 'three') {
         table = $('.myTable').DataTable({
+          iDisplayLength: 100,
           order: [[2, 'asc']],
           columnDefs: [{
             targets: "_all",
@@ -966,6 +963,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         });
       } else {
         table = $('.myTable').DataTable({
+          iDisplayLength: 100,
           order: [[0, 'desc']],
           columnDefs: [{
             targets: "_all",
@@ -975,6 +973,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       }
     } else {
       table = $('.myTable').DataTable({
+        iDisplayLength: 100,
         order: [[0, 'desc']],
         columnDefs: [{
           targets: "_all",
@@ -1067,7 +1066,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       if (input[i].title == 'ACID' || input[i].title == 'سماح') {
         input[i].setAttribute('size', 50);
       } else if (input[i].title == 'رقم الحاوية') {
-        input[i].setAttribute('size', 30);
+        input[i].setAttribute('size', 90);
+      } else if (input[i].title == 'اذن الاستيراد') {
+        input[i].setAttribute('size', 85);
       } else if (input[i].title == 'بوليصة') {
         input[i].setAttribute('size', input[i].getAttribute('placeholder').length + 15);
       } else if (input[i].title == 'الكشف') {
@@ -1093,7 +1094,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       var status = 1;
     }
 
-    document.body.style.zoom = "35%";
+    document.body.style.zoom = "40%";
   },
   methods: {
     updateItem: function updateItem(item, current_index) {
@@ -1438,7 +1439,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.i(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*==========fonts sizes ===============*/\nbody[data-v-874a346a] {\n  direction: rtl;\n  font-family: \"Cairo\" !important;\n}\nul[data-v-874a346a] {\n  list-style: none;\n  padding: 0px;\n  margin: 0px;\n}\n.alert-danger[data-v-874a346a] {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.modal-dialog[data-v-874a346a] {\n  text-align: right;\n}\n.modal-dialog .modal-header .close[data-v-874a346a] {\n  margin-left: inherit;\n}\n.modal-dialog .alert-danger[data-v-874a346a] {\n  display: none;\n}\ninput[data-v-874a346a], textarea[data-v-874a346a] {\n  direction: rtl;\n}\ntable .control[data-v-874a346a] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\ntable .control span[data-v-874a346a], table .control a[data-v-874a346a] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #4899d8;\n  background: #fafafa;\n  border-radius: 4px;\n  width: 35px;\n  height: 35px;\n  cursor: pointer;\n  text-decoration: none;\n}\ntable .control span[data-v-874a346a]:last-of-type {\n  color: darkred;\n  margin-right: 5px;\n}\n.dataTables_wrapper .dataTables_filter input[data-v-874a346a] {\n  margin-right: 10px !important;\n}\n.dt-button[data-v-874a346a] {\n  background-color: #4899d8;\n  color: white;\n  padding: 5px 15px;\n  border: none;\n  border-radius: 5px;\n}\n#myTable_wrapper[data-v-874a346a] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  flex-direction: row-reverse;\n}\n#myTable_wrapper > div[data-v-874a346a] {\n  margin-left: 10px;\n}\n#myTable_wrapper .dataTables_info[data-v-874a346a] {\n  margin-right: 50px;\n}\n#myTable_wrapper table[data-v-874a346a] {\n  width: 100%;\n  max-width: 100%;\n}\n\n/*---------------------------------------------------start of public classes -------------------------------------*/\n.page-content[data-v-874a346a] {\n  width: calc(100% - 200px);\n  height: 400px;\n  margin-right: auto;\n  padding: 30px;\n}\n.main-title[data-v-874a346a] {\n  position: relative;\n  font-size: 30px;\n  color: #4899d8;\n  text-align: right;\n}\n.txt-shadow[data-v-874a346a], .main-title[data-v-874a346a] {\n  text-shadow: 1px 1px 1px #ddd;\n}\n.main-title[data-v-874a346a]::before, .main-title[data-v-874a346a]::after {\n  content: \"\";\n  position: absolute;\n  bottom: -18px;\n  display: block;\n  width: 85px;\n  height: 3px;\n  background-color: #1464bf;\n}\n.main-title[data-v-874a346a]::after {\n  width: 60px;\n  bottom: -24px;\n}\n.form_icons .form-group[data-v-874a346a] {\n  position: relative;\n}\n.form_icons .form-group > span[data-v-874a346a] {\n  position: absolute;\n  left: 10px;\n  top: 39px;\n  color: #4899d8;\n  font-size: 18px;\n}\n.modal-backdrop[data-v-874a346a] {\n  width: 100% !important;\n  height: 100% !important;\n}\n.searchable ul[data-v-874a346a] {\n  max-height: 230px;\n  overflow: auto;\n  display: none;\n  border: 1px solid #eee;\n  border-top: none;\n}\n.searchable ul li[data-v-874a346a] {\n  padding: 10px;\n  border-bottom: 1px solid #eee;\n  cursor: pointer;\n}\ntable.dataTable thead .sorting input[data-v-874a346a] {\n  width: unset;\n  font-size: 21px;\n}\ntable.dataTable thead td[data-v-874a346a] {\n  width: unset !important;\n}\ntable.dataTable thead td input[data-v-874a346a] {\n  font-weight: bold;\n  color: red;\n}\n#DataTables_Table_0_filter[data-v-874a346a] {\n  font-size: 35px;\n  margin-top: 10px;\n  margin-right: 50px;\n}\n.data_rows_data table.dataTable thead .sorting[data-v-874a346a] {\n  padding-left: 0px;\n  background-color: #b7b7c3;\n}\n\n/*---------------------------------------------------end of public classes -------------------------------------*/\n.info-data-style .header-controls button[data-v-874a346a], .info-data-style a[data-v-874a346a] {\n  padding: 15px 50px;\n  font-size: 30px !important;\n  margin-bottom: 10px;\n}\n.info-data-style .header-controls span[data-v-874a346a] {\n  font-size: 30px;\n}\n.info-data-style .dataTables_length[data-v-874a346a] {\n  font-size: 30px;\n}\n.info-data-style #print_columns input[type=checkbox][data-v-874a346a] {\n  width: 35px;\n  height: 35px;\n  position: relative;\n  top: 3px;\n}\n.outer-nav > span[data-v-874a346a] {\n  position: fixed;\n  right: 10px;\n  top: 10px;\n  font-size: 30px;\n  color: #222;\n  z-index: 99999999999;\n}\nnav[data-v-874a346a] {\n  width: 200px;\n  position: fixed;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  z-index: 9999;\n  background-color: #4899d8;\n  overflow: hidden;\n}\nnav > img[data-v-874a346a] {\n  display: block;\n  margin: 20px auto;\n  max-width: 100px;\n}\nnav h2[data-v-874a346a] {\n  font-size: 30px;\n}\nnav h3[data-v-874a346a] {\n  font-size: 14px;\n}\nnav > ul > li[data-v-874a346a]:hover {\n  background-color: #1464bf;\n  padding-right: 30px;\n}\nnav ul[data-v-874a346a] {\n  overflow: auto;\n  height: calc(100% - 153px);\n}\nnav ul li[data-v-874a346a] {\n  border-bottom: 1px solid #ddd;\n  text-align: right;\n  padding: 10px;\n  transition: 0.5s all;\n}\nnav ul li a[data-v-874a346a] {\n  font-size: 18px;\n  color: white;\n  text-decoration: none;\n}\nnav ul li a span[data-v-874a346a]:first-of-type {\n  position: relative;\n  top: 4px;\n  margin-left: 2px;\n}\nnav .list_data[data-v-874a346a] {\n  padding: 0px;\n}\nnav .list_data p[data-v-874a346a], nav .list_data li[data-v-874a346a] {\n  padding: 10px;\n}\nnav .list_data li[data-v-874a346a]:hover {\n  background-color: #1464bf;\n  padding-right: 30px;\n}\nnav .list_data ul[data-v-874a346a] {\n  display: none;\n}\nnav .list_data p[data-v-874a346a] {\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0px;\n}\nnav .list_data p span[data-v-874a346a] {\n  color: white;\n}\nnav .list_data p span[data-v-874a346a]:first-of-type {\n  color: #222;\n  font-weight: bold;\n  font-size: 20px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*==========fonts sizes ===============*/\nbody[data-v-874a346a] {\n  direction: rtl;\n  font-family: \"Cairo\" !important;\n}\nul[data-v-874a346a] {\n  list-style: none;\n  padding: 0px;\n  margin: 0px;\n}\n.alert-danger[data-v-874a346a] {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.modal-dialog[data-v-874a346a] {\n  text-align: right;\n}\n.modal-dialog .modal-header .close[data-v-874a346a] {\n  margin-left: inherit;\n}\n.modal-dialog .alert-danger[data-v-874a346a] {\n  display: none;\n}\ninput[data-v-874a346a], textarea[data-v-874a346a] {\n  direction: rtl;\n}\ntable .control[data-v-874a346a] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\ntable .control span[data-v-874a346a], table .control a[data-v-874a346a] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #4899d8;\n  background: #fafafa;\n  border-radius: 4px;\n  width: 35px;\n  height: 35px;\n  cursor: pointer;\n  text-decoration: none;\n}\ntable .control span[data-v-874a346a]:last-of-type {\n  color: darkred;\n  margin-right: 5px;\n}\n.dataTables_wrapper .dataTables_filter input[data-v-874a346a] {\n  margin-right: 10px !important;\n}\n.dt-button[data-v-874a346a] {\n  background-color: #4899d8;\n  color: white;\n  padding: 5px 15px;\n  border: none;\n  border-radius: 5px;\n}\n#myTable_wrapper[data-v-874a346a] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  flex-direction: row-reverse;\n}\n#myTable_wrapper > div[data-v-874a346a] {\n  margin-left: 10px;\n}\n#myTable_wrapper .dataTables_info[data-v-874a346a] {\n  margin-right: 50px;\n}\n#myTable_wrapper table[data-v-874a346a] {\n  width: 100%;\n  max-width: 100%;\n}\n\n/*---------------------------------------------------start of public classes -------------------------------------*/\n.page-content[data-v-874a346a] {\n  width: calc(100% - 200px);\n  height: 400px;\n  margin-right: auto;\n  padding: 30px;\n}\n.main-title[data-v-874a346a] {\n  position: relative;\n  font-size: 30px;\n  color: #4899d8;\n  text-align: right;\n}\n.txt-shadow[data-v-874a346a], .main-title[data-v-874a346a] {\n  text-shadow: 1px 1px 1px #ddd;\n}\n.main-title[data-v-874a346a]::before, .main-title[data-v-874a346a]::after {\n  content: \"\";\n  position: absolute;\n  bottom: -18px;\n  display: block;\n  width: 85px;\n  height: 3px;\n  background-color: #1464bf;\n}\n.main-title[data-v-874a346a]::after {\n  width: 60px;\n  bottom: -24px;\n}\n.form_icons .form-group[data-v-874a346a] {\n  position: relative;\n}\n.form_icons .form-group > span[data-v-874a346a] {\n  position: absolute;\n  left: 10px;\n  top: 39px;\n  color: #4899d8;\n  font-size: 18px;\n}\n.modal-backdrop[data-v-874a346a] {\n  width: 100% !important;\n  height: 100% !important;\n}\n.searchable ul[data-v-874a346a] {\n  max-height: 230px;\n  overflow: auto;\n  display: none;\n  border: 1px solid #eee;\n  border-top: none;\n}\n.searchable ul li[data-v-874a346a] {\n  padding: 10px;\n  border-bottom: 1px solid #eee;\n  cursor: pointer;\n}\ntable.dataTable thead .sorting input[data-v-874a346a] {\n  width: unset;\n  font-size: 21px;\n}\ntable.dataTable thead td[data-v-874a346a] {\n  width: unset !important;\n  padding-right: 0px;\n  padding-left: 0px;\n}\ntable.dataTable thead td input[data-v-874a346a] {\n  font-weight: bold;\n  color: red;\n}\n#DataTables_Table_0_filter[data-v-874a346a] {\n  font-size: 35px;\n  margin-top: 10px;\n  margin-right: 50px;\n}\n.data_rows_data table.dataTable thead .sorting[data-v-874a346a] {\n  padding-left: 0px;\n  background-color: #b7b7c3;\n}\n\n/*---------------------------------------------------end of public classes -------------------------------------*/\n.info-data-style .header-controls button[data-v-874a346a], .info-data-style a[data-v-874a346a] {\n  padding: 15px 50px;\n  font-size: 30px !important;\n  margin-bottom: 10px;\n}\n.info-data-style .header-controls span[data-v-874a346a] {\n  font-size: 30px;\n}\n.info-data-style .dataTables_length[data-v-874a346a] {\n  font-size: 30px;\n}\n.info-data-style #print_columns input[type=checkbox][data-v-874a346a] {\n  width: 35px;\n  height: 35px;\n  position: relative;\n  top: 3px;\n}\n.social[data-v-874a346a] {\n  position: fixed;\n  left: 0px;\n  top: 40%;\n  z-index: 100000000000000020;\n}\n.social ul li[data-v-874a346a] {\n  width: 40px;\n  height: 40px;\n}\n.social ul li a[data-v-874a346a] {\n  width: 40px;\n  height: 40px;\n  text-decoration: none;\n  color: white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.social ul li[data-v-874a346a]:first-of-type {\n  background-color: #0165E1;\n  border-top-right-radius: 10px;\n}\n.social ul li[data-v-874a346a]:nth-of-type(2) {\n  background: #f09433;\n  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);\n}\n.social ul li[data-v-874a346a]:last-of-type {\n  background-color: #1DA1F2;\n  border-bottom-right-radius: 10px;\n}\n.location p[data-v-874a346a] {\n  font-size: 18px;\n}\n.location p span[data-v-874a346a]:first-of-type {\n  color: #4899d8;\n}\n.location p span[data-v-874a346a]:last-of-type {\n  font-weight: bold;\n  position: relative;\n  top: -1px;\n  margin-right: 7px;\n}\n.outer-nav > span[data-v-874a346a] {\n  position: fixed;\n  right: 10px;\n  top: 10px;\n  font-size: 30px;\n  color: #222;\n  z-index: 99999999999;\n}\nnav[data-v-874a346a] {\n  width: 200px;\n  position: fixed;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  z-index: 9999;\n  background-color: #4899d8;\n  overflow: hidden;\n}\nnav > img[data-v-874a346a] {\n  display: block;\n  margin: 20px auto;\n  max-width: 100px;\n}\nnav h2[data-v-874a346a] {\n  font-size: 30px;\n}\nnav h3[data-v-874a346a] {\n  font-size: 14px;\n}\nnav > ul > li[data-v-874a346a]:hover {\n  background-color: #1464bf;\n  padding-right: 30px;\n}\nnav ul[data-v-874a346a] {\n  overflow: auto;\n  height: calc(100% - 153px);\n}\nnav ul li[data-v-874a346a] {\n  border-bottom: 1px solid #ddd;\n  text-align: right;\n  padding: 10px;\n  transition: 0.5s all;\n}\nnav ul li a[data-v-874a346a] {\n  font-size: 18px;\n  color: white;\n  text-decoration: none;\n}\nnav ul li a span[data-v-874a346a]:first-of-type {\n  position: relative;\n  top: 4px;\n  margin-left: 2px;\n}\nnav .list_data[data-v-874a346a] {\n  padding: 0px;\n}\nnav .list_data p[data-v-874a346a], nav .list_data li[data-v-874a346a] {\n  padding: 10px;\n}\nnav .list_data li[data-v-874a346a]:hover {\n  background-color: #1464bf;\n  padding-right: 30px;\n}\nnav .list_data ul[data-v-874a346a] {\n  display: none;\n}\nnav .list_data p[data-v-874a346a] {\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0px;\n}\nnav .list_data p span[data-v-874a346a] {\n  color: white;\n}\nnav .list_data p span[data-v-874a346a]:first-of-type {\n  color: #222;\n  font-weight: bold;\n  font-size: 20px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1461,7 +1462,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".modal.show .modal-dialog[data-v-ec3137fc] {\n  max-width: 70%;\n}\n.page-content[data-v-ec3137fc] {\n  padding-top: 0px;\n}\ntable tbody tr td[data-v-ec3137fc] {\n  font-size: 33px;\n  word-break: break-word;\n  padding-right: 3px;\n  padding-left: 3px;\n}\ntable tbody tr td input[data-v-ec3137fc] {\n  margin: 0px;\n}\n.container[data-v-ec3137fc] {\n  width: 100%;\n  max-width: 100%;\n}\n.color_show[data-v-ec3137fc] {\n  width: 80px;\n  height: 30px;\n  display: block;\n  margin: auto;\n  border-radius: 6px;\n}\nh2[data-v-ec3137fc]::before {\n  display: none;\n}\nh2[data-v-ec3137fc]::after {\n  display: none;\n}\n.titles a[data-v-ec3137fc] {\n  font-size: 20px;\n}\n.header-controls p[data-v-ec3137fc] {\n  margin-bottom: 0px;\n}\n.color_tr[data-v-ec3137fc] {\n  background-color: darkcyan !important;\n}\ntable.dataTable[data-v-ec3137fc] {\n  width: 100% !important;\n}\n.info-data-style[data-v-ec3137fc] {\n  padding: 0px;\n}\n.info-data-style > div[data-v-ec3137fc]:first-of-type {\n  padding: 0px;\n}\n.modal label[data-v-ec3137fc], .modal input[data-v-ec3137fc], .modal select[data-v-ec3137fc], .modal textarea[data-v-ec3137fc], .modal li[data-v-ec3137fc], .modal span[data-v-ec3137fc], .modal .modal-header h5[data-v-ec3137fc], .modal .btn[data-v-ec3137fc] {\n  font-size: 37px;\n}\n.modal .form-group[data-v-ec3137fc] {\n  margin-bottom: 23px;\n}\n.modal .form_icons .form-group > span[data-v-ec3137fc] {\n  top: 72px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".modal.show .modal-dialog[data-v-ec3137fc] {\n  max-width: 70%;\n}\n.page-content[data-v-ec3137fc] {\n  padding-top: 0px;\n}\ntable tbody tr td[data-v-ec3137fc] {\n  font-size: 33px;\n  word-break: break-word;\n  padding-right: 3px;\n  padding-left: 3px;\n}\ntable tbody tr td input[data-v-ec3137fc] {\n  margin: 0px;\n}\n.container[data-v-ec3137fc] {\n  width: 100%;\n  max-width: 100%;\n}\n.color_show[data-v-ec3137fc] {\n  width: 80px;\n  height: 30px;\n  display: block;\n  margin: auto;\n  border-radius: 6px;\n}\nh2[data-v-ec3137fc]::before {\n  display: none;\n}\nh2[data-v-ec3137fc]::after {\n  display: none;\n}\n.titles a[data-v-ec3137fc] {\n  font-size: 20px;\n}\n.header-controls p[data-v-ec3137fc] {\n  margin-bottom: 0px;\n}\n.color_tr[data-v-ec3137fc] {\n  background-color: #8080803d !important;\n}\ntable.dataTable[data-v-ec3137fc] {\n  width: 100% !important;\n}\n.info-data-style[data-v-ec3137fc] {\n  padding: 0px;\n}\n.info-data-style > div[data-v-ec3137fc]:first-of-type {\n  padding: 0px;\n}\n.modal label[data-v-ec3137fc], .modal input[data-v-ec3137fc], .modal select[data-v-ec3137fc], .modal textarea[data-v-ec3137fc], .modal li[data-v-ec3137fc], .modal span[data-v-ec3137fc], .modal .modal-header h5[data-v-ec3137fc], .modal .btn[data-v-ec3137fc] {\n  font-size: 37px;\n}\n.modal .form-group[data-v-ec3137fc] {\n  margin-bottom: 23px;\n}\n.modal .form_icons .form-group > span[data-v-ec3137fc] {\n  top: 72px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2621,7 +2622,7 @@ var render = function () {
                   "myTable table table-bordered  table-hover text-center table-striped",
               },
               [
-                _c("thead", { staticStyle: { "background-color": "black" } }, [
+                _c("thead", [
                   _c("tr", [
                     _c("td", [_vm._v("التسلسلي")]),
                     _vm._v(" "),
@@ -2746,38 +2747,7 @@ var render = function () {
                   _vm._l(_vm.output, function (item, index) {
                     return _c(
                       "tr",
-                      {
-                        key: index,
-                        style: [
-                          item["company_id"] == null ||
-                          item["item"] == null ||
-                          item["country_id"] == null ||
-                          item["exporter_id"] == null ||
-                          item["bill_number"] == null ||
-                          item["bill_value"] == null ||
-                          item["number_data"] == null ||
-                          item["weight"] == null ||
-                          item["ACID"] == null ||
-                          item["permission"] == null ||
-                          item["destination_id"] == null
-                            ? { backgroundColor: "#FFE566" } // yellow first step
-                            : item["number_container"] == null ||
-                              item["line"] == null ||
-                              item["policy"] == null ||
-                              item["vehicle"] == null ||
-                              item["arrived"] == null ||
-                              item["allowed"] == null ||
-                              item["instructions_status"] == null ||
-                              item["lifting_status"] == null
-                            ? { backgroundColor: "#00184582" } // blue second step
-                            : item["status"] == 1
-                            ? { backgroundColor: "#222" } // black
-                            : item["matching_status"] != null
-                            ? ""
-                            : { backgroundColor: "#61A5C2" }, // three step
-                        ],
-                        attrs: { id: "row_" + index },
-                      },
+                      { key: index, attrs: { id: "row_" + index } },
                       [
                         _c(
                           "td",
@@ -2800,7 +2770,7 @@ var render = function () {
                               },
                             ],
                             staticStyle: {
-                              color: "green",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "user_" + item["id"] },
@@ -2812,7 +2782,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "blue",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "company_" + item["id"] },
@@ -2834,7 +2804,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "coral",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "item_" + item["id"] },
@@ -2846,7 +2816,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "cornflowerblue",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "country_" + item["id"] },
@@ -2868,7 +2838,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "darkmagenta",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "exporter_" + item["id"] },
@@ -2890,7 +2860,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "darkred",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "bill_number_" + item["id"] },
@@ -2908,7 +2878,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "darkgreen",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "bill_value_" + item["id"] },
@@ -2920,7 +2890,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "goldenrod",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "number_data_" + item["id"] },
@@ -2932,7 +2902,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "cornflowerblue",
+                              color: "rgb(1, 42, 74)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "weight_" + item["id"] },
@@ -2943,7 +2913,10 @@ var render = function () {
                         _c(
                           "td",
                           {
-                            staticStyle: { "font-weight": "bold" },
+                            staticStyle: {
+                              color: "rgb(44, 125, 160)",
+                              "font-weight": "bold",
+                            },
                             attrs: { id: "ACID_" + item["id"] },
                           },
                           [_vm._v(_vm._s(item.ACID))]
@@ -2953,7 +2926,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "hotpink",
+                              color: "rgb(44, 125, 160)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "permission_" + item["id"] },
@@ -2965,7 +2938,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "purple",
+                              color: "rgb(44, 125, 160)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "destination_" + item["id"] },
@@ -2987,7 +2960,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "cornflowerblue",
+                              color: "rgb(135, 129, 129)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "number_container_" + item["id"] },
@@ -2999,7 +2972,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "coral",
+                              color: "rgb(135, 129, 129)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "line_" + item["id"] },
@@ -3011,7 +2984,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "green",
+                              color: "rgb(135, 129, 129)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "policy_" + item["id"] },
@@ -3023,7 +2996,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "darkred",
+                              color: "rgb(135, 129, 129)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "vehicle_" + item["id"] },
@@ -3035,7 +3008,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "cornflowerblue",
+                              color: "rgb(135, 129, 129)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "arrived_" + item["id"] },
@@ -3047,7 +3020,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "darkgreen",
+                              color: "rgb(135, 129, 129)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "allowed_" + item["id"] },
@@ -3058,7 +3031,10 @@ var render = function () {
                         _c(
                           "td",
                           {
-                            staticStyle: { "font-weight": "bold" },
+                            staticStyle: {
+                              color: "rgb(135, 129, 129)",
+                              "font-weight": "bold",
+                            },
                             attrs: { id: "instructions_status_" + item["id"] },
                           },
                           [_vm._v(_vm._s(item.instructions_status))]
@@ -3068,7 +3044,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "darkblue",
+                              color: "rgb(135, 129, 129)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "lifting_status_" + item["id"] },
@@ -3080,7 +3056,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "#086868",
+                              color: "rgb(3, 169, 244)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "forty_six_number_" + item["id"] },
@@ -3092,7 +3068,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "darkred",
+                              color: "rgb(3, 169, 244)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "request_number_" + item["id"] },
@@ -3102,7 +3078,13 @@ var render = function () {
                         _vm._v(" "),
                         _c(
                           "td",
-                          { attrs: { id: "statement_status_" + item["id"] } },
+                          {
+                            staticStyle: {
+                              color: "rgb(3, 169, 244)",
+                              "font-weight": "bold",
+                            },
+                            attrs: { id: "statement_status_" + item["id"] },
+                          },
                           [_vm._v(_vm._s(item.statement_status))]
                         ),
                         _vm._v(" "),
@@ -3110,7 +3092,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "purple",
+                              color: "rgb(3, 169, 244)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "notes_" + item["id"] },
@@ -3122,7 +3104,7 @@ var render = function () {
                           "td",
                           {
                             staticStyle: {
-                              color: "coral",
+                              color: "rgb(3, 169, 244)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "exchange_date_" + item["id"] },
@@ -3142,7 +3124,7 @@ var render = function () {
                               },
                             ],
                             staticStyle: {
-                              color: "darkgreen",
+                              color: "rgb(3, 169, 244)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "matching_status_" + item["id"] },
@@ -3162,7 +3144,7 @@ var render = function () {
                               },
                             ],
                             staticStyle: {
-                              color: "cornflowerblue",
+                              color: "rgb(3, 169, 244)",
                               "font-weight": "bold",
                             },
                             attrs: { id: "status_" + item["id"] },
