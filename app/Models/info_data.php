@@ -20,7 +20,7 @@ class info_data extends Model
         ,'weight','number_data','status'];
 
     public function company(){
-        return $this->belongsTo(companies_types::class,'company_id');
+        return $this->belongsTo(companies_types::class,'company_id')->withTrashed();
     }
     public function user(){
         return $this->belongsTo(User::class,'user_id')->withTrashed();

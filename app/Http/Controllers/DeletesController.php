@@ -22,7 +22,7 @@ class DeletesController extends Controller
             }else if(request('type') == 'branches'){
                 $data = companies_types::onlyTrashed()->get();
             }else if(request('type') == 'info'){
-                $data = info_data::with('user','company')->onlyTrashed()->get();
+                $data = info_data::with('user','company')->has('company')->onlyTrashed()->get();
             }else{
                 return redirect('/');
             }
